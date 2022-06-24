@@ -1,3 +1,11 @@
 #!/bin/bash
 gcc -Wall -Werror -Wextra -pedantic -c *.c
-ar -rc libmy.a *.o
+cc -fPIC -c util_file.c
+
+cc -fPIC -c util_net.c
+
+cc -fPIC -c util_math.c
+
+cc -shared libutil.so util_file.o util_net.o util_math.o
+
+
