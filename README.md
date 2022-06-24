@@ -1,3 +1,1 @@
-# FIRST SPRINT
-
-My README.md
+Updating README.md
